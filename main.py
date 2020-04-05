@@ -27,8 +27,7 @@ def get_args():
 
 def encrypt(Kpub, message, debug=False):
 	p, alfa, B = Kpub
-	a = randint(0, p) 
-	a = 4
+	a = randint(0, p) # = 4
 	# Ephemeral key calculation ->      Ke = (alfa^a)mod(p)
 	Ke = pow(alfa, a, p)
 	# Shared key calculation ->         K = (B^a)mod(p)
@@ -65,8 +64,7 @@ def decrypt(Kpriv, encrypted_message, debug=False):
 def sign(Kpriv, message, debug=False):
 	p, alfa, b = Kpriv
 	# Ephemeral key is random
-	Ke = randint(0, p-2) 
-	Ke = 31
+	Ke = randint(0, p-2) # = 31
 	# Parameter r calculation ->        r = (alfa^Ke)mod(p)
 	r = pow(alfa, Ke, p)
     # Parameter s calculation ->        s = ((m-b*r)*Ke^(-1))mod(p-1) 
