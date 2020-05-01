@@ -28,7 +28,7 @@ For the encryption process, it is necessary to add **--encrypt**, the parameters
 python3 main.py --encrypt -p 79 -a 30 -B 59 -m 44 -vv
 ``` 
 
-![image 1](images/Screenshot_1.jpg)
+![image 1](https://i.imgur.com/mppROiz.jpg)
 
 
 ### Decryption
@@ -39,7 +39,7 @@ For the decryption process, it is necessary to add **--decrypt**, the parameters
 python3 main.py --decrypt -p 79 -a 30 -b 61 -m 73 -ke 13 -vv
 ``` 
 
-![image 2](images/Screenshot_2.jpg)
+![image 2](https://i.imgur.com/22jplT7.jpg)
 
 
 ### Signature
@@ -50,7 +50,7 @@ For the signing process, it is necessary to add **--sign**, the parameters of th
 python3 main.py --sign -p 541 -a 128 -b 105 -m 95 -vv
 ``` 
 
-![image 3](images/Screenshot_3.jpg)
+![image 3](https://i.imgur.com/qeLCIqa.jpg)
 
 
 ### Signature verification
@@ -61,4 +61,4 @@ For the signature verification process, it is necessary to add **--verify**, the
 python3 main.py --verify -p 541 -a 128 -B 239 -m 95 -r 280 -s 65 -vv
 ``` 
 
-![image 4](images/Screenshot_4.jpg)
+![image 4](https://i.imgur.com/ZbjJzK0.jpg)
